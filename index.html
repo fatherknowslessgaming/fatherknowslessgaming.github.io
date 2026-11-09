@@ -1,1 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Father Knows Less: gaming discoveries, practical walkthroughs, and hard-won tips from Lucas.">
+  <title>Father Knows Less — Field Notes for Confused Gamers</title>
+  <style>
+    :root { --paper:#f0ebdf; --ink:#28352d; --green:#344b3b; --rust:#b65c3b; --line:#b9b5a6; --cream:#faf7ef; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,'Times New Roman',serif; line-height:1.55; }
+    a { color:inherit; }
+    a:focus-visible { outline:3px solid var(--rust); outline-offset:4px; }
+    .wrap { max-width:1120px; margin:auto; padding:0 24px; }
+    .topline { background:var(--green); color:var(--cream); font:700 12px/1.4 Arial,sans-serif; letter-spacing:.13em; text-transform:uppercase; }
+    .topline .wrap { display:flex; justify-content:space-between; gap:16px; padding-top:10px; padding-bottom:10px; }
+    .masthead { padding:38px 0 25px; border-bottom:5px double var(--ink); }
+    .eyebrow { font:700 12px/1.4 Arial,sans-serif; letter-spacing:.16em; text-transform:uppercase; }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { font-size:clamp(3.3rem,9vw,7.3rem); line-height:.88; letter-spacing:-.075em; margin:13px 0 20px; font-weight:900; }
+    .masthead-bottom { display:flex; justify-content:space-between; align-items:end; gap:20px; }
+    .tagline { font-size:clamp(1.05rem,2vw,1.4rem); font-style:italic; margin:0; }
+    nav { display:flex; flex-wrap:wrap; gap:8px 23px; font:700 12px Arial,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+    nav a { text-decoration:none; border-bottom:2px solid transparent; }
+    nav a:hover { border-color:var(--rust); }
+    main { padding-bottom:60px; }
+    .cover { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(245px,1fr); gap:38px; padding:42px 0; border-bottom:2px solid var(--ink); }
+    .section-label { display:inline-block; background:var(--rust); color:white; padding:6px 10px; font:700 11px Arial,sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+    .cover h2 { font-size:clamp(2.7rem,5vw,5rem); letter-spacing:-.055em; line-height:1.02; margin:20px 0; }
+    .cover .intro { font-size:1.3rem; max-width:580px; }
+    .cover-note { background:var(--green); color:var(--cream); padding:28px; display:flex; flex-direction:column; justify-content:space-between; min-height:315px; transform:rotate(1deg); }
+    .cover-note .big { font:900 clamp(3rem,6vw,5rem)/.95 Georgia,serif; letter-spacing:-.06em; }
+    .cover-note p { margin:16px 0 0; }
+    .rule-heading { display:flex; align-items:baseline; justify-content:space-between; gap:15px; border-bottom:3px solid var(--ink); padding-bottom:10px; margin-bottom:23px; }
+    .rule-heading h2 { margin:0; font-size:2.2rem; letter-spacing:-.04em; }
+    .stories { padding:42px 0; }
+    .story-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+    .story { background:var(--cream); border:1px solid var(--line); padding:25px; position:relative; }
+    .story:first-child { border-top:7px solid var(--rust); }
+    .story:last-child { border-top:7px solid var(--green); }
+    .story h3 { font-size:2.4rem; line-height:1; margin:16px 0; letter-spacing:-.045em; }
+    .story p { max-width:42ch; }
+    .stamp { font:700 11px Arial,sans-serif; letter-spacing:.15em; text-transform:uppercase; color:var(--rust); }
+    .story:last-child .stamp { color:var(--green); }
+    .status { display:inline-block; font:700 11px Arial,sans-serif; letter-spacing:.07em; text-transform:uppercase; border:1px solid var(--line); padding:6px 9px; }
+    .about { border-top:2px solid var(--ink); display:grid; grid-template-columns:1fr 2fr; gap:35px; padding:35px 0 15px; }
+    .about h2 { font-size:2.3rem; line-height:1.1; }
+    .about p { font-size:1.13rem; max-width:64ch; }
+    footer { background:var(--green); color:var(--cream); padding:25px 0; font:12px/1.6 Arial,sans-serif; letter-spacing:.04em; }
+    footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+    @media (max-width:720px) {
+      .topline .wrap { flex-direction:column; gap:3px; }
+      .masthead-bottom { align-items:start; flex-direction:column; }
+      .cover,.story-grid,.about { grid-template-columns:1fr; }
+      .cover { gap:25px; }
+      .cover-note { min-height:220px; transform:none; }
+      .rule-heading { align-items:start; flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topline"><div class="wrap"><span>Unofficial field notes from the gaming frontier</span><span>Issue No. 001 · Est. 2026</span></div></div>
+  <header class="wrap masthead" id="home">
+    <div class="eyebrow">A publication of questionable expertise</div>
+    <h1>FATHER<br>KNOWS LESS<span style="color:var(--rust)">.</span></h1>
+    <div class="masthead-bottom">
+      <p class="tagline">Learning games the hard way, so you don't have to.</p>
+      <nav aria-label="Main navigation"><a href="#home">Front page</a><a href="#guides">Game guides</a><a href="#about">Meet Lucas</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="cover" aria-labelledby="cover-title">
+      <div>
+        <span class="section-label">Cover story · ATMOSFAR</span>
+        <h2 id="cover-title">Lost in the clouds. Again.</h2>
+        <p class="intro">Floating islands, mysterious artifacts, and a flying base that definitely didn't come with instructions.</p>
+        <p>We're collecting what we learn about Cloud Cruisers, Wasps, puzzles, and all the little things the game leaves you to figure out.</p>
+        <p><strong>Full guides are on the way.</strong> First, we have to survive long enough to write them.</p>
+      </div>
+      <aside class="cover-note" aria-label="Editor's note">
+        <div class="eyebrow">From the desk of Lucas</div>
+        <div class="big">OOPS.<br>THAT<br>WORKED.</div>
+        <p>Part discovery journal. Part survival guide. Entirely too many wrong turns.</p>
+      </aside>
+    </section>
+    <section class="stories" id="guides" aria-labelledby="guides-title">
+      <div class="rule-heading"><h2 id="guides-title">Inside this issue</h2><span class="eyebrow">Guides & adventures</span></div>
+      <div class="story-grid">
+        <article class="story"><div class="stamp">01 / Currently exploring</div><h3>ATMOSFAR</h3><p>Cloud Cruiser construction, Wasp docking, artifact puzzles, and hard-earned exploration notes.</p><span class="status">Guides in preparation</span></article>
+        <article class="story"><div class="stamp">02 / On the horizon</div><h3>Windrose</h3><p>Ships, exploration, survival, and whatever unexpected trouble waits beyond the next island.</p><span class="status">Future coverage</span></article>
+      </div>
+    </section>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div><span class="eyebrow">Behind the byline</span><h2 id="about-title">Who's Lucas?</h2></div>
+      <div><p>Lucas is our wild-haired guide to games that don't always explain themselves. He gets lost, presses the wrong button, and occasionally discovers something useful.</p><p>Father Knows Less is about sharing those discoveries—especially in lesser-known and early-access games—so the next player has a slightly easier time.</p></div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>© 2026 Father Knows Less</span><span>Powered by curiosity & questionable decisions.</span></div></footer>
+</body>
+</html>
 

@@ -29,8 +29,8 @@
     .section-label { display:inline-block; background:var(--rust); color:white; padding:6px 10px; font:700 11px Arial,sans-serif; letter-spacing:.12em; text-transform:uppercase; }
     .cover h2 { font-size:clamp(2.7rem,5vw,5rem); letter-spacing:-.055em; line-height:1.02; margin:20px 0; }
     .cover .intro { font-size:1.3rem; max-width:580px; }
-    .cover-note { background:var(--green); color:var(--cream); padding:28px; display:flex; flex-direction:column; justify-content:space-between; min-height:315px; transform:rotate(1deg); }
-    .cover-note .big { font:900 clamp(3rem,6vw,5rem)/.95 Georgia,serif; letter-spacing:-.06em; }
+    .cover-note { background:var(--green); color:var(--cream); padding:28px; display:flex; flex-direction:column; justify-content:space-between; gap:20px; min-height:315px; min-width:0; transform:rotate(1deg); }
+    .cover-note .big { font:900 clamp(2.5rem,4.1vw,3.65rem)/1 Georgia,serif; letter-spacing:-.065em; overflow-wrap:normal; }
     .cover-note p { margin:16px 0 0; }
     .rule-heading { display:flex; align-items:baseline; justify-content:space-between; gap:15px; border-bottom:3px solid var(--ink); padding-bottom:10px; margin-bottom:23px; }
     .rule-heading h2 { margin:0; font-size:2.2rem; letter-spacing:-.04em; }
@@ -55,6 +55,7 @@
       .cover,.story-grid,.about { grid-template-columns:1fr; }
       .cover { gap:25px; }
       .cover-note { min-height:220px; transform:none; }
+      .cover-note .big { font-size:clamp(2.5rem,10vw,3.65rem); }
       .rule-heading { align-items:start; flex-direction:column; }
     }
   </style>
@@ -99,4 +100,3 @@
   <footer><div class="wrap"><span>© 2026 Father Knows Less</span><span>Powered by curiosity & questionable decisions.</span></div></footer>
 </body>
 </html>
-
